@@ -1,0 +1,114 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.navbar{
+    /* border: solid; */
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color:rgb(242, 242, 242)
+
+    
+
+    
+
+}
+.navbar .logo{
+    width: 50%;
+   
+
+  
+}
+.navbar .logo img{
+    /* height: 70px;
+    width: 80px; */
+    margin-left: 40px;
+    background-color: aliceblue;
+ 
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-size: 20px;
+    margin: 10px;
+  
+}
+.navbar a:hover{
+    color: red;
+    transition: all 0.5s ease;
+    text-decoration: underline;
+}
+/* hero section */
+/* https: //assets.nicepagecdn.com/11a8ddce/3502986/images/pexels-photo-733500.jpg */
+
+.hero {
+    /* border: solid; */
+        height: 65vh;
+        background-image: url(https://assets.nicepagecdn.com/11a8ddce/3502986/images/pexels-photo-733500.jpg);
+        background-size: cover;
+        background-position: center;
+        background-position: top;
+        display: flex;
+        margin-top:50px ;
+       
+    
+
+}
+.hero .hero-content{
+    
+    height: 100%;
+    display: flex;
+ flex-direction: column;
+ line-height: 60px;
+ margin-top: 50px;
+ padding-left: 50px;
+
+    
+}
+.hero .hero-content h1{
+    color: rgb(16, 16, 16);
+    font-size: 3rem;
+   
+}
+.hero .hero-content p{
+    color: rgb(44, 43, 43);
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.hero .hero-content h4 {
+    color: rgb(168, 163, 163);
+    font-size: 1.5rem;
+   
+}
+.hero .hero-content .btn{
+    /* display: flex; */
+        justify-content: center;
+        align-items:end;
+        padding: 9px 12px;
+        gap: 8px;
+        height: 40px;
+        width: 172px;
+        border: none;
+        background: #ec5e1c;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 20px;
+        margin-top:50px ;
+        color: rgb(252, 253, 254);
+       
+    
+}
+.hero .hero-content .btn:hover{
+    box-shadow: 2px 2px 2px 2px ;
+    background-color: gray;
+    transition:ease-out 1s;
+}
