@@ -155,14 +155,15 @@
 }
 .content-info{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-evenly;
     margin-top: 50px;
     padding-left: 80px;
     padding-right: 80px;
     margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 .content-info1{
-    width: 40%;
+    width: 45%;
     border: 2px solid white;
     background-color:white;
     line-height: 40px;
@@ -175,8 +176,8 @@
 
 }
 .content-info2{
-    width: 40%;
-    border: 2px solid  #ec5e1c;
+    width: 45%;
+    /* border: 2px solid  #ec5e1c; */
     background-color: #ec5e1c;
     color: aliceblue;
     font-size: 20px;
@@ -200,4 +201,24 @@
     margin-top: 50px;
     font-weight:900;
 
+}
+#info1-poster{
+    background-image: url('https://images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/29fd0360109159e1970d573a/woman-sitting-sofa-with-laptop-legs.jpg');
+    background-size:cover;
+    background-position: center;
+    background-position: top;
+    height: 300px;
+  
+}
+#info2-poster{
+   background-image: url('	https://assets.nicepagecdn.com/11a8ddce/3502986/images/lovely-woman-using-laptop-office.jpg');
+    background-size:cover;
+    background-position: center;
+    background-position: top;
+    height: 300px;
+   
+ 
+}
+.content-info1,.content-info2{
+    margin: 5px;
 }
