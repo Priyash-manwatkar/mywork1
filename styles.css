@@ -49,13 +49,13 @@
 
 .hero {
     /* border: solid; */
-        height: 65vh;
+        height: 70vh;
         background-image: url(https://assets.nicepagecdn.com/11a8ddce/3502986/images/pexels-photo-733500.jpg);
         background-size: cover;
         background-position: center;
         background-position: top;
         display: flex;
-        margin-top:50px ;
+        /* margin-top:50px ; */
        
     
 
@@ -66,19 +66,19 @@
     display: flex;
  flex-direction: column;
  line-height: 60px;
- margin-top: 50px;
+ padding: 20px;
  padding-left: 50px;
 
     
 }
 .hero .hero-content h1{
     color: rgb(16, 16, 16);
-    font-size: 3rem;
+    font-size: 2rem;
    
 }
 .hero .hero-content p{
     color: rgb(44, 43, 43);
-    font-size: 1.5rem;
+    font-size: 25px;
     display: flex;
     flex-wrap: wrap;
 
@@ -90,11 +90,10 @@
    
 }
 .hero .hero-content .btn{
-    /* display: flex; */
-        justify-content: center;
-        align-items:end;
+
+        /* justify-content: center;
+        align-items:end; */
         padding: 9px 12px;
-        gap: 8px;
         height: 40px;
         width: 172px;
         border: none;
@@ -102,7 +101,7 @@
         border-radius: 20px;
         cursor: pointer;
         font-size: 20px;
-        margin-top:50px ;
+        margin-top:40px ;
         color: rgb(252, 253, 254);
        
     
@@ -184,11 +183,11 @@
 
     
 }
-.content-info button{
+.content-info .btn{
     color: white;
     font-size: 20px;
     border-radius: 20px;
-    border:  rgb(240, 204, 207);;
+    border:  rgb(240, 204, 207);
     background-color:rgb(240, 204, 207);
     padding: 15px;
     width: 200px;
@@ -230,7 +229,7 @@
     background-size:cover;
     background-position:left;
     background-position: top;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     
 
 }
@@ -248,9 +247,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
 
  
 
@@ -258,6 +258,7 @@
 
 }
 .form-content-heading{
+    margin-top: 20px;
     font-size: 45px;
     font-weight: 600;
     display: flex;
@@ -265,8 +266,7 @@
     align-items: center;
     text-decoration: underline;
     line-height: 5px;
-    position: relative;
-    right: 110px;
+    
 }
 .form-content-button
 {
@@ -278,15 +278,14 @@
     background-color: #ec5e1c;
     border-radius: 5px;
     border: #ec5e1c;
-    position: relative;
-    right: 70px;
+ 
 }
 .form-content-para{
     font-size: 25px;
     color: white;
     line-height: 30px;
-    position: relative;
-    left: 40px;
+    text-align: justify;
+
 }
 .form-info{
     width: 40%;
@@ -322,8 +321,6 @@
     width: 200px;
     height: 40px;
     border-radius: 10px;
-    position: relative;
-    left: 30%;
     background-color: rgb(255, 98, 0);
     border: 2px solid rgb(255,98,0);
     color: rgb(246, 241, 241);
@@ -333,4 +330,145 @@
 .box-info:hover{
     box-shadow: 5px 5px 5px 5px;
     transition: 1s ease-out;
+}
+@media screen and (max-width :693px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+      
+    }
+
+}
+
+
+@media   screen and (max-width: 445px) {
+    .hero{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+      
+        overflow-y:auto;
+     
+
+    }
+    .hero-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+        
+    }
+  
+
+    .hero-title {
+        font-size: 10px;
+    }
+
+    .hero-text {
+        font-size: 8px;
+    }
+
+    .btn {
+        
+        padding: 10px 20px;
+    }
+}
+
+@media  screen and (max-width :375px) {
+    .hero-text{
+        color: #ec5e1c;
+    }
+
+}
+@media screen and (max-width :693px) {
+    .hero-title{
+        font-size: 10px;
+
+  }
+
+}
+@media (min-width:687px) and (max-width:100px)
+{
+    .hero{
+        background-image: url('hero.jpg');
+    }
+
+}
+@media screen and  (max-width:720px){
+    .content-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .content-info1 , .content-info2{
+        width: 100%;
+    }
+    .btn{
+        width: auto;
+    }
+    
+}
+@media screen and (max-width:1285px) {
+    .form{
+        display: flex;
+        flex-direction: column;
+        padding-right: 100px;
+    }
+    .form-content ,.form-info{
+        width: 100%;
+      
+    }
+    
+}
+@media  (min-width:980px){
+    .box-info{
+        margin: 20px;
+    }
+    
+}
+
+@media (min-width:100px) and (max-width:1285px)
+{
+    .form-content{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        line-height: 100px;
+        text-align: justify;
+      
+    }
+    .form-content-heading{
+        font-size:30px;
+        line-height: 50px;
+    }
+    .form-content-para{
+        font-size: 20px;
+        line-height: 50px;
+    }
+    .form-content-button{
+        width: auto;
+        margin-top: 10px;
+    }
+}
+@media (max-width:1287px) and (min-width:100px)
+{
+    .form-info input{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: auto;
+        height: 50px;
+    }
+  
+
+
+
+}
+@media (max-width:1287px) and (min-width:10px)
+{
+    .form-info button{
+        width: auto;
+    }
+
 }
